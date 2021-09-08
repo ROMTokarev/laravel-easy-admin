@@ -6,6 +6,10 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Ryan Claxton",
+            "email": "rclaxton.dev@gmail.com"
+        },
+        {
             "name": "Roman Tokarev",
             "email": "79996969490@mail.ru"
         }
