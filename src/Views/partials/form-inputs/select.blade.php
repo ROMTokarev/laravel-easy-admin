@@ -8,7 +8,7 @@
 class="form-control" name="{{ $field }}">
     @foreach (explode(',', $select_fields[$field]) as $option)
         <option
-        @if ($data->$field ?? 'EASY_ADMIN_NOT_SELECTED' == $option)
+        @if (trim($data->$field) == trim(count(explode('|', $option)) == 2 ? explode('|', $option)[0] : $option))
             selected
         @endif
         value="{{ count(explode('|', $option)) == 2 ? explode('|', $option)[0] : $option }}">
